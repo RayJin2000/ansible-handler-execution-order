@@ -106,3 +106,12 @@ ok: [localhost] => {
 PLAY RECAP ************************************************************************************************************************************************************************************************************************************
 localhost                  : ok=18   changed=9    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
 ```
+
+Tested with:
+```shell
+> ansible --version
+  
+ansible [core 2.16.11]
+python version = 3.12.6 (main, Sep  9 2024, 00:00:00) [GCC 14.2.1 20240801 (Red Hat 14.2.1-1)] (/usr/bin/python3)
+jinja version = 3.1.4
+libyaml = True
