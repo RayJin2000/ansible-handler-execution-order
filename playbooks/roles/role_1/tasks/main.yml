@@ -1,0 +1,17 @@
+- name: role_1 task_1
+  ansible.builtin.debug:
+    msg: role_1 task_1
+  notify: role_1_handler_1
+  changed_when: true
+
+- name: role_1 task_2
+  ansible.builtin.debug:
+    msg: role_1 task_2
+  notify: role_1_handler_2
+  changed_when: true
+
+- name: role_1 task_3
+  ansible.builtin.debug:
+    msg: role_1 task_3
+  notify: role_1_handler_3
+  changed_when: true

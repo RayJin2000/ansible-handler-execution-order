@@ -1,0 +1,11 @@
+- name: role_3_handler_1
+  ansible.builtin.debug:
+    msg: role_3_handler_1
+
+- name: role_3_handler_2
+  ansible.builtin.debug:
+    msg: role_3_handler_2
+
+- name: role_3_handler_3
+  ansible.builtin.debug:
+    msg: role_3_handler_3
