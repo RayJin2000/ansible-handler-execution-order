@@ -1,0 +1,17 @@
+- name: Test Handler
+  hosts: localhost
+  serial: 1
+  gather_facts: false
+  environment:
+    LC_CTYPE: de_DE.utf8
+
+  roles:
+    - role: role_2
+    - role: role_1
+    - role: role_3
+    - role: role_1
+
+# Handler Executon Order:
+# role_2
+# role_3
+# role_1

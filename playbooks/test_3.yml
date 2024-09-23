@@ -1,0 +1,21 @@
+- name: Test Handler
+  hosts: localhost
+  serial: 1
+  gather_facts: false
+  environment:
+    LC_CTYPE: de_DE.utf8
+
+  tasks:
+    - ansible.builtin.import_role:
+        name: role_2
+    - ansible.builtin.import_role:
+        name: role_1
+    - ansible.builtin.import_role:
+        name: role_3
+    - ansible.builtin.import_role:
+        name: role_1
+
+# Handler Executon Order:
+# role_2
+# role_3
+# role_1

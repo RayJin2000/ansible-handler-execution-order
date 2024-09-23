@@ -9,3 +9,8 @@
     - role: role_2
     - role: role_1
     - role: role_3
+
+# Handler Executon Order:
+# role_2
+# role_1
+# role_3
